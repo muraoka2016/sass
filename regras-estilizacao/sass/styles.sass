@@ -1,0 +1,90 @@
+/* Exemplo de uso do nesting
+/*Exemplo de uso do list nesting, onde usasse a vírgula para aplicar estilos nos elementos listados
+
+
+.container, main
+    background-color: #ddd
+
+    p, h2
+        color: lightblue
+
+/*Exemplo de uso de combinator em um nest para selecionar alvos específicos
+li
+    color: purple
+
+ol
+    >li
+        color: blue
+
+/*Exemplo de uso de parent selector & para selecionar elementos pai, muito usado em hover
+a
+    text-decoration: none
+    color: green
+    transition: .5s
+    padding: 10px
+    border: 1px solid green
+    display: block
+    width: 150px
+    text-align: center
+
+    &:hover
+        background-color: green
+        color: white
+
+.container
+    background-color: #ccc
+    padding: 20px
+    margin: 20px
+
+    &-content
+        color: red
+
+.spacing
+    padding: 200px
+    background-color: gray
+
+/*Uso de exemplo do parent com sufixo em um exemplo, mostrando o reuso de propriedades e facilidade
+/* da aplicação do hover
+.btn
+    padding: 10px 20px
+    border: 1px solid blue
+    border-radius: 5px
+    background-color: blue
+    color: #fff
+    cursor: pointer
+    margin: 5px
+
+    &:hover
+        background-color: transparent
+        color: blue
+
+    &-success
+        background-color: green
+        border-color: green
+
+        &:hover
+            color: green
+    &-danger
+        background-color: red
+        border-block-color: red
+
+        &:hover
+            color: red
+
+/*Uso do placeholder e extend para reutilizar certos códigos que se repetem ao longo do projeto
+/*evitando repetição desnecessária e deixando o arquivo menor
+%base-title-style
+    border-bottom: 2px dotted red
+    padding: 10px
+    background-color: yellow
+    text-align: center
+
+.title
+    font-size: 30px
+    color: green
+    @extend %base-title-style
+
+.subtitle
+    font-size: 25px
+    color: blue
+    @extend %base-title-style
