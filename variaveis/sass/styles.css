@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/*Exemplo de uso de variável */
+/*É uma boa prática criar outro arquivo com as variáveis e importá-las no arquivo principal */
+h1 {
+  color: red;
+  border: 2px solid blue;
+}
+
+p {
+  color: red;
+  border: 2px solid blue;
+  margin: 30px;
+  padding: 40px;
+}
+
+a {
+  color: red;
+  border: 2px solid blue;
+}
+
+/*Há o escopo de variáveis assim como em linguagens de programação normais, normalmente usasse */
+/* variáveis globais para não dar problema  */
+/*Exemplo de shadowing, a variável border já existe mas eu sobreponho localmente  */
+/*Exemplo de shadowing, a variável border já existe mas eu sobreponho localmente 
+ * $border: 3px dotted green
+ * color: $font-color
+ * border: $border *//*# sourceMappingURL=styles.css.map */
