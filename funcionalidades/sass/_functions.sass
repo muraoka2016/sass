@@ -1,0 +1,28 @@
+@function text-color($size)
+    $color: #000
+    @if($size > 10)
+        $color: red
+    @else
+        $color: blue
+    @return $color
+
+/*Exemplo de função com propriedade opcional
+@function custom-border($variation: 1)
+    $var: 3
+    @if $variation > $var
+    /*Exemplo de uso de warning
+    @warn 'O número máximo de variações é #{$var}'
+    $border: none
+    @if $variation ==1
+        $border: 1px solid red
+    @else if $variation ==2
+        $border: 2px solid green
+    @else
+        $border: 3px dotted gold
+
+    @return $border
+
+/*Exemplo de função com nome
+@function custom-width($width: 200px, $division: 2)
+    @debug 'O valor da divisão é: #{$width/$division}'
+    @return $width/$division

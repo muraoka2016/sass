@@ -1,0 +1,128 @@
+@charset "UTF-8";
+.btn {
+  background-color: #ddd;
+  color: #000;
+  padding: 12px 10px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+/*Mixins são como funções, e podem ser reusados durante o projeto sem reescrever código*/   
+/*Exemplo de uso de parâmetros, em caso de propriedades que se repetem mas os valores mudam */
+/*Exemplo de uso de parâmetro opcional, deve ficar à direita, caso contrário dará erro */
+/*Quando o parâmetro é nomeado, pode ser passado em qualquer ordem */
+/*Usado quando não há necessidade de parâmetro, caso contrário usar mixin */
+.esp-maior, .esp-medio, .esp-menor {
+  font-size: 2rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
+/*Exemplo de função com propriedade opcional */
+/*Exemplo de função com nome */
+body {
+  margin: 10px;
+}
+
+.p-esp {
+  color: red;
+  background-color: yellow;
+  padding: 10px;
+  border: 1px solid red;
+}
+
+h2 {
+  background-color: green;
+  color: white;
+}
+
+.esp-menor {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid red;
+  color: #000;
+  background-color: #fff;
+}
+
+.esp-medio {
+  padding: 20px;
+  margin: 20px;
+  border: 3px solid blue;
+  color: #000;
+  background-color: #321;
+}
+
+.esp-maior {
+  padding: 30px;
+  margin: 30px;
+  border: 5px solid green;
+  color: #915;
+  background-color: #321;
+}
+
+/*Exemplo de uso de cálculo para personalizar medidas */
+.container-menor {
+  width: 400px;
+  border: 1px solid red;
+}
+
+.container-maior {
+  width: 400px;
+  border: 2px solid green;
+}
+
+/*Exemplo de uso de funções no sass */
+.fonte-pequena {
+  font-size: 5px;
+  color: blue;
+  border: 3px dotted gold;
+}
+
+.fonte-grande {
+  font-size: 20px;
+  color: red;
+}
+
+.teste-1 {
+  width: 100px;
+  background-color: red;
+}
+
+.teste-2 {
+  width: 500px;
+  background-color: blue;
+}
+
+.teste-3 {
+  width: 100px;
+  background-color: green;
+}
+
+/*Exemplo de uso de for each */
+.title-40px {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.title-60px {
+  font-size: 60px;
+  line-height: 72px;
+}
+
+.title-80px {
+  font-size: 80px;
+  line-height: 96px;
+}
+
+/*Exemplo de uso do for  */
+.p-1 {
+  color: lightblue;
+}
+
+.p-2 {
+  color: lightgreen;
+}
+
+.p-3 {
+  color: teal;
+}/*# sourceMappingURL=styles.css.map */

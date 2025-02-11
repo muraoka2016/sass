@@ -1,0 +1,24 @@
+/*Mixins são como funções, e podem ser reusados durante o projeto sem reescrever código*/   
+@mixin special
+    color: red
+    background-color: yellow
+    padding: 10px
+    border: 1px solid red
+
+@mixin green
+    background-color: green
+    color: white
+
+/*Exemplo de uso de parâmetros, em caso de propriedades que se repetem mas os valores mudam
+@mixin espacamento($p, $m)
+    padding: $p
+    margin: $m
+
+/*Exemplo de uso de parâmetro opcional, deve ficar à direita, caso contrário dará erro
+@mixin borda($style, $color, $width: 1px)
+    border: $width $style $color
+
+/*Quando o parâmetro é nomeado, pode ser passado em qualquer ordem
+@mixin colors($font: #000, $background: #fff)
+    color: $font
+    background-color: $background
